@@ -1,0 +1,14 @@
+header.container
+    nav.navbar.navbar-expand-md.toogler-mob.navbar-light
+        .container-xxl
+            a.navbar-brand(href='#')
+                img.img(src="../dist/images/svg/Logo.svg", alt="logo")
+            button.navbar-toggler.border-0.user-select-none(type='button' data-bs-toggle='collapse' data-bs-target='#navbarTogglerDemo02' aria-controls='navbarTogglerDemo02' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            .collapse.navbar-collapse#navbarTogglerDemo02
+                .navbar-nav.me-auto.mb-lg-0
+                    each name in ['About', 'Gallery', 'Pricing', 'FAQ', 'Benefits']
+                        a.nav-link.text-uppercase.p-1(href="#")=name
+                form.text-nowrap(action="#", method="post") 
+                    button.my-1.me-md-3.btn.btn-outline-warning.text-uppercase(type='button') SIgn In
+                    button.my-1.btn.btn-warning.text-uppercase(type='button') Sign Up

@@ -1,0 +1,92 @@
+//navbar
+$navbar-light-color: #B5B5B5;
+$navbar-light-hover-color: #ffc107;
+$navbar-brand-margin-end: 3rem;
+$navbar-padding-y:  1rem;
+
+//font-size
+$h1-font-size: 3rem;
+
+//links nover
+$link-hover-color: #ffc107;
+
+//Spacing
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .5,
+  2: $spacer * 1,
+  3: $spacer * 2,
+  4: $spacer * 3,
+  5: $spacer * 6,
+  6: $spacer * 15,
+  7: $spacer * 25
+);
+
+
+//utilities
+$utilities: (
+    "height": (
+        property: height,
+        class: h,
+        values: (
+          5: 5rem,
+          15: 15rem,
+          25: 25%,
+          50: 50%,
+          75: 75%,
+          100: 100%,
+          auto: auto
+        )
+    ),
+    "width": (
+    property: width,
+    class: w,
+    values: (
+      20: 20rem,
+      25: 25%,
+      30: 30%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      auto: auto
+    )
+  ),
+  "max-width": (
+    property: max-width,
+    class: mw,
+    values: (
+      100: 100%,
+      20: 25rem
+      )
+    )
+);
+
+
+//position 
+$position-values: (
+  0: 0,
+  50: 50%,
+  100: 100%,
+  200: 200%
+);
+
+
+//input 
+$input-color: #ffc107;
+$input-placeholder-color:#8476AA;
+$input-bg:rgba(255, 255, 255, 0.1);
+$input-border-color: rgba(255, 255, 255, 0.1); 
+
+
+//modal
+$modal-content-bg: #1f102e;
+
+
+
+
+
+
+
+
+

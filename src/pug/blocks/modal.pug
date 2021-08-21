@@ -1,0 +1,9 @@
+.modal.fade#staticBackdrop(data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.modal-lg
+        .modal-content.rounded-3
+            .modal-header
+                h5#staticBackdropLabel.modal-title.text-c-orange Video Content
+            .modal-body
+                iframe.video-prew(width='100%' height='400px' src='https://www.youtube.com/embed/PpaM11TX6ww?controls=0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+            .modal-footer
+                button.btn.btn-outline-warning.text-uppercase(type='button' data-bs-dismiss='modal') Close

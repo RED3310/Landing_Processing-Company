@@ -1,0 +1,13 @@
+//-------->>MAIN-BLOCK
+mixin company( items )
+    each item in items 
+        .col-xl-2.col-md-4.col-sm-6.p-2: object(data=item.src , type="image/svg+xml")
+
+
+//-------->>FOOTER-BLOCK
+mixin pages( items )
+    ul
+        each item in items 
+            li.mb-2.fw-bold.text-white=item.text_head
+            li.mb-1: a.text-c-grey(href=item.href)=item.text
+

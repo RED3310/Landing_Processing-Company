@@ -1,0 +1,83 @@
+body {
+    background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
+}
+
+*,
+*:before
+*:after {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;   
+}
+p {
+    font-family: 'Inter', sans-serif;  
+}
+
+//text colors
+.text {
+    //colors
+    &-c-orange{
+        color:$c-orange;
+    }
+    &-c-green {
+        color:$c-green;
+    }
+    &-c-violet{
+        color:$c-violet;
+    }
+    &-c-grey {
+       color:$c-gray-1
+    }
+    //font
+    &-ff-inter {
+        font-family: 'Inter', sans-serif;
+    }
+    &-ff-mont {
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+
+//background
+.bgc {
+    &-ff {
+        background-image: url('../images/map.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+    }
+    &-ee {
+        background-image: url('../images/Group3.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+    }
+    &-cl {
+        background-color: #323579;
+    }
+}
+
+//config image
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.toogler-mob {
+    position: fixed;
+    background: linear-gradient( 180deg, #3B1D60 1.22%, #040D3E 106.28%);
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}

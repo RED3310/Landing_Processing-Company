@@ -1,0 +1,61 @@
+main.container
+    .row.mt-5
+        .col-lg-6.pt-4.align-self-center
+            h1.text-c-green.mb-3 Many reasons to get up and start to get back in the business 
+            p.fs-5.text-c-violet The harder you work for something, the greater you’ll feel when you achieve it.
+            form(action="#", method="post") 
+                button.mt-3.me-md-3.btn.btn-warning.text-uppercase(type='button') Learn More
+                button.mt-3.btn.btn-outline-warning.text-uppercase(type='button') Demo 
+            .row.mt-4.text-mda-cnt
+                .col-lg-3.col-md-3.py-2
+                    a(type='button' data-bs-toggle='modal' data-bs-target='#staticBackdrop'): img.img.rounded-3(src="../src/images/video1.png", height='36px' alt="video")
+                    //- iframe.video-content.rounded-3(width='100%' height='100px' src='https://www.youtube.com/embed/PpaM11TX6ww?controls=0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+                .col-lg-9.col-md-9.align-self-center
+                    p.fs-6.text-c-violet The harder you work for something, the greater you’ll feel when you achieve it. 
+                        a.text-c-green(type='button' data-bs-toggle='modal' data-bs-target='#staticBackdrop') Watch preview
+        .col-md-6.pt-4.align-self-start.d-none.d-md-none.d-lg-block
+            object.img(data="../dist/images/svg/Frame.svg", type="image/svg+xml")
+    .row.mt-5.mb-5.text-center.opacity-50
+        +company( [
+            {src: '../dist/images/svg/company1.svg'},
+            {src: '../dist/images/svg/company2.svg'}, 
+            {src: '../dist/images/svg/company3.svg'}, 
+            {src: '../dist/images/svg/company4.svg'},
+            {src: '../dist/images/svg/company5.svg'}, 
+            {src: '../dist/images/svg/company6.svg'} ] )
+    .row
+        .col.text-center
+            h2.text-c-green.mb-2 Your choice
+            p.fs-5.text-c-violet There are many reasons to get down and start to get depressed about your situation. 
+        .row.d-flex.justify-content-md-center 
+            .col-md-4.d-flex.mt-4
+                object.img-card.align-self-start.me-3(data="../dist/images/svg/icon1.svg", type="image/svg+xml")
+                .card-content 
+                    h5.text-c-green.mb-2 Ecstatic elegance
+                    p.fs-6.text-c-violet Article nor prepare chicken you him now. Shy merits say advice ten before lovers innate add.
+            .col-md-4.d-flex.mt-4
+                object.img-card.align-self-start.me-3(data="../dist/images/svg/icon2.svg", type="image/svg+xml")
+                .card-content 
+                    h5.text-c-green.mb-2 Folly words widow
+                    p.fs-6.text-c-violet Effect if in up no depend seemed. Ecstatic elegance gay but disposed. We me rent been part what.
+            .col-md-4.d-flex.mt-4
+                object.img-card.align-self-start.me-3(data="../dist/images/svg/icon3.svg", type="image/svg+xml")
+                .card-content 
+                    h5.text-c-green.mb-2 Possible procured trifling
+                    p.fs-6.text-c-violet We me rent been part what. An concluded sportsman offending so provision mr education.
+        .row.mb-4
+            .col-md-4.d-flex.mt-4
+                object.img-card.align-self-start.me-3(data="../dist/images/svg/icon4.svg", type="image/svg+xml")
+                .card-content 
+                    h5.text-c-green.mb-2 Open game
+                    p.fs-6.text-c-violet Shy merits say advice ten before lovers innate add. She cordially behaviour can attempted estimable.
+            .col-md-4.d-flex.mt-4
+                object.img-card.align-self-start.me-3(data="../dist/images/svg/icon5.svg", type="image/svg+xml")
+                .card-content 
+                    h5.text-c-green.mb-2 Endeavor
+                    p.fs-6.text-c-violet Improve ashamed married expense bed her comfort pursuit mrs. Four time took ye your as fail lady. 
+            .col-md-4.d-flex.mt-4
+                object.img-card.align-self-start.me-3(data="../dist/images/svg/icon6.svg", type="image/svg+xml")
+                .card-content 
+                    h5.text-c-green.mb-2 Comfort pursuit
+                    p.fs-6.text-c-violet Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug.
