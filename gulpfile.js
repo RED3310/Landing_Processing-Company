@@ -24,7 +24,6 @@ let path = {
     clean: "./" + project_folder + "/"
 }
 
-
 let { src, dest } = require('gulp');
 let gulp = require('gulp');
 
@@ -34,7 +33,6 @@ let sass = require('gulp-sass')(require('sass'));
 let fileinclude = require('gulp-file-include');
 let babel = require('gulp-babel');
 //let autoprefixer = require('gulp-autoprefixer');
-
 
 function browserSync() {
     browsersync.init({
@@ -46,17 +44,11 @@ function browserSync() {
     })
 }
 
-
 function images() {
     return src(path.src.img)
         .pipe(dest(path.build.img))
         .pipe(browsersync.stream())
 }
-
-gulp.task('ш', function () {
-    return gulp.src('app/fonts/**/*')
-        .pipe(gulp.dest('dist/fonts'))
-})
 
 function pugHtml() {
     return src(path.src.pug)
@@ -82,13 +74,11 @@ function scripts() {
         .pipe(browsersync.stream())
 }
 
-
 function watchFiles() {
     gulp.watch([path.watch.pug], pugHtml)
     gulp.watch([path.watch.css], style)
     gulp.watch([path.watch.js], scripts)
 }
-
 
 let build = gulp.series(pugHtml, style, scripts, images);
 let watch = gulp.parallel(build, watchFiles, browserSync);
